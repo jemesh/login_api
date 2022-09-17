@@ -1,0 +1,7 @@
+from django.contrib import admin
+from django.urls import path,include
+from . import serializers
+from . import views
+urlpatterns = [
+    path('',views.UserViewSet.as_view())
+]
